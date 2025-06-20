@@ -1,7 +1,7 @@
-a complete example of a 3-tier architecture with DTOs in C# using ADO.NET and Console Application (.NET Framework):
+Here's a complete example of a 3-tier architecture with DTOs in C# using ADO.NET and Console Application (.NET Framework):
 
-1. Database Setup (SQL Server)
-sql
+### 1. Database Setup (SQL Server)
+```sql
 CREATE DATABASE UserDB;
 GO
 
@@ -15,16 +15,20 @@ CREATE TABLE Users (
     Email NVARCHAR(100) NOT NULL UNIQUE,
     RegistrationDate DATETIME DEFAULT GETDATE()
 );
-2. Solution Structure
-text
+```
+
+### 2. Solution Structure
+```
 - UserDTO (Data Transfer Object)
 - UserDAL (Data Access Layer)
 - UserBLL (Business Logic Layer)
 - ConsoleApp (Presentation Layer)
-3. Implementation
-1. UserDTO.cs (DTO Layer)
+```
 
-csharp
+### 3. Implementation
+
+**1. UserDTO.cs (DTO Layer)**
+```csharp
 namespace UserDTO
 {
     public class User
@@ -36,9 +40,10 @@ namespace UserDTO
         public DateTime RegistrationDate { get; set; }
     }
 }
-2. UserDAL.cs (Data Access Layer)
+```
 
-csharp
+**2. UserDAL.cs (Data Access Layer)**
+```csharp
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -101,9 +106,10 @@ namespace UserDAL
         }
     }
 }
-3. UserBLL.cs (Business Logic Layer)
+```
 
-csharp
+**3. UserBLL.cs (Business Logic Layer)**
+```csharp
 using System.Collections.Generic;
 using UserDTO;
 using UserDAL;
@@ -150,9 +156,10 @@ namespace UserBLL
         }
     }
 }
-4. Program.cs (Presentation Layer)
+```
 
-csharp
+**4. Program.cs (Presentation Layer)**
+```csharp
 using System;
 using System.Configuration;
 using UserBLL;
@@ -224,9 +231,10 @@ namespace ConsoleApp
         }
     }
 }
-5. App.config
+```
 
-xml
+**5. App.config**
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <startup> 
@@ -239,63 +247,42 @@ xml
              providerName="System.Data.SqlClient"/>
     </connectionStrings>
 </configuration>
-4. How DTOs Work in This Architecture:
-Presentation Layer:
+```
 
-Receives user input
+### 4. How DTOs Work in This Architecture:
+1. **Presentation Layer**:
+   - Receives user input
+   - Calls BLL methods with primitive types/DTOs
+   - Displays DTOs received from BLL
 
-Calls BLL methods with primitive types/DTOs
+2. **Business Logic Layer**:
+   - Receives requests from presentation layer
+   - Performs validation and business rules
+   - Uses DTOs to communicate with DAL
+   - Returns processed DTOs to presentation layer
 
-Displays DTOs received from BLL
+3. **Data Access Layer**:
+   - Receives DTOs from BLL
+   - Maps DTOs to database operations
+   - Returns database results as DTOs to BLL
 
-Business Logic Layer:
+4. **DTO Layer**:
+   - Simple data containers without behavior
+   - Passed between all layers
+   - Isolated from business logic and data access
 
-Receives requests from presentation layer
-
-Performs validation and business rules
-
-Uses DTOs to communicate with DAL
-
-Returns processed DTOs to presentation layer
-
-Data Access Layer:
-
-Receives DTOs from BLL
-
-Maps DTOs to database operations
-
-Returns database results as DTOs to BLL
-
-DTO Layer:
-
-Simple data containers without behavior
-
-Passed between all layers
-
-Isolated from business logic and data access
-
-5. Key Benefits:
-Separation of Concerns: Each layer has distinct responsibilities
-
-Decoupling: Changes in one layer don't affect others
-
-Maintainability: Easier to modify and test components
-
-Security: Prevents direct database exposure to presentation layer
-
-Reusability: Business logic can be reused with different UIs
+### 5. Key Benefits:
+1. **Separation of Concerns**: Each layer has distinct responsibilities
+2. **Decoupling**: Changes in one layer don't affect others
+3. **Maintainability**: Easier to modify and test components
+4. **Security**: Prevents direct database exposure to presentation layer
+5. **Reusability**: Business logic can be reused with different UIs
 
 To run this example:
-
-Create the database using the provided SQL script
-
-Create a C# Console Application (.NET Framework)
-
-Add the connection string in App.config
-
-Implement the 4 code files in separate class files
-
-Add references between projects/layers as needed
+1. Create the database using the provided SQL script
+2. Create a C# Console Application (.NET Framework)
+3. Add the connection string in App.config
+4. Implement the 4 code files in separate class files
+5. Add references between projects/layers as needed
 
 This implementation shows a complete flow from user input through business validation to database storage, using DTOs to transfer data between layers while maintaining separation of concerns.
-
