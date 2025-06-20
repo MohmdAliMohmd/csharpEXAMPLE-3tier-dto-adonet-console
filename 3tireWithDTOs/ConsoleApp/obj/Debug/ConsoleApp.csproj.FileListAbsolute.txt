@@ -1,0 +1,16 @@
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\ConsoleApp.exe
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\ConsoleApp.pdb
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\System.Configuration.ConfigurationManager.dll
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserBLL.dll
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserDTO.dll
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserDAL.dll
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserBLL.pdb
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserDTO.pdb
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\System.Configuration.ConfigurationManager.xml
+F:\C22\3tireWithDTOs\ConsoleApp\bin\Debug\UserDAL.pdb
+F:\C22\3tireWithDTOs\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
+F:\C22\3tireWithDTOs\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+F:\C22\3tireWithDTOs\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
+F:\C22\3tireWithDTOs\ConsoleApp\obj\Debug\ConsoleApp.exe
+F:\C22\3tireWithDTOs\ConsoleApp\obj\Debug\ConsoleApp.pdb

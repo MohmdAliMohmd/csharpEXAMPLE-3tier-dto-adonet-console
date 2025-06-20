@@ -1,0 +1,6 @@
+F:\C22\3tireWithDTOs\UserDTO\bin\Debug\UserDTO.dll
+F:\C22\3tireWithDTOs\UserDTO\bin\Debug\UserDTO.pdb
+F:\C22\3tireWithDTOs\UserDTO\obj\Debug\UserDTO.csproj.AssemblyReference.cache
+F:\C22\3tireWithDTOs\UserDTO\obj\Debug\UserDTO.csproj.CoreCompileInputs.cache
+F:\C22\3tireWithDTOs\UserDTO\obj\Debug\UserDTO.dll
+F:\C22\3tireWithDTOs\UserDTO\obj\Debug\UserDTO.pdb

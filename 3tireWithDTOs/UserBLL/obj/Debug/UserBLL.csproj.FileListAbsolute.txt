@@ -1,0 +1,11 @@
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserBLL.dll
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserBLL.pdb
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserDAL.dll
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserDTO.dll
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserDAL.pdb
+F:\C22\3tireWithDTOs\UserBLL\bin\Debug\UserDTO.pdb
+F:\C22\3tireWithDTOs\UserBLL\obj\Debug\UserBLL.csproj.AssemblyReference.cache
+F:\C22\3tireWithDTOs\UserBLL\obj\Debug\UserBLL.csproj.CoreCompileInputs.cache
+F:\C22\3tireWithDTOs\UserBLL\obj\Debug\UserBLL.csproj.Up2Date
+F:\C22\3tireWithDTOs\UserBLL\obj\Debug\UserBLL.dll
+F:\C22\3tireWithDTOs\UserBLL\obj\Debug\UserBLL.pdb
