@@ -16,6 +16,15 @@ CREATE TABLE Users (
     RegistrationDate DATETIME DEFAULT GETDATE()
 );
 ```
+###  Sample Data
+```sql
+INSERT INTO Users (FirstName, LastName, Email, RegistrationDate) VALUES
+('John', 'Doe', 'john.doe@example.com', '2023-01-15'),
+('Jane', 'Smith', 'jane.smith@example.com', '2023-02-20'),
+('Michael', 'Johnson', 'michael.j@example.com', DEFAULT),  -- Uses default
+('Emily', 'Williams', 'emily.w@example.com', DEFAULT),      -- Uses default
+('David', 'Brown', 'david.brown@example.com', '2023-05-10');
+```
 
 ### 2. Solution Structure
 ```
